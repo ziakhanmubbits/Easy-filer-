@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { setupListeners } from '@reduxjs/toolkit/dist/query'
+import { setupListeners } from "@reduxjs/toolkit/query";
 import { getApiCall } from "../../src/Services/GetApiCall";
 import myReducer from "./myReducer";
 import { saleryCalculatorApiCall } from "../Services/salerycalculatorapicall";
