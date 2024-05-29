@@ -39,7 +39,7 @@ import NewHeader from './src/screens/NewHeader/index';
 import NewPasswordChoose from './src/screens/auth/NewPasswordChoose/Index';
 import Otp from './src/screens/auth/OTP/Index';
 import OtherIncome from './src/screens/homeTab/IndividualTaxFiling/Income/IncomePages/OtherIncome/Index';
-import Partnership from './src//screens/homeTab/IndividualTaxFiling/Income/IncomePages/Partnership/Index';
+import Partnership from './src/screens/homeTab/IndividualTaxFiling/Income/IncomePages/Partnership/Index';
 import Payment from './src/screens/homeTab/IndividualTaxFiling/Payment/Index';
 import Pension from './src/screens/homeTab/IndividualTaxFiling/Income/IncomePages/Pension/Index';
 import Accountant from './src/screens/homeTab/IndividualTaxFiling/Income/IncomePages/Professional/Accountant/Index';

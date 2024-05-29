@@ -137,6 +137,12 @@ const GstRegisterationFormUpload = () => {
     setImageList(updatedList);
   };
 
+  const postP=()=>{
+    setTimeout(()=>{
+        navigation.navigate("Payment")
+    },1000)
+    }
+
   //post api
   const postdata = async (formData) => {
     console.log('formData', formData._parts);
@@ -384,13 +390,16 @@ const GstRegisterationFormUpload = () => {
                 )}
             </ScrollView><Button
               onPressBack={() => navigation.goBack()}
-              onPressForward={() => {
-                if (gstId === 0) {
-                  Submit();
-                } else {
-                  updatePost();
-                }
-              }} 
+              onPressForward={postP}
+            //   onPressForward={
+            //     () => {
+            //     if (gstId === 0) {
+            //       Submit();
+            //     } else {
+            //       updatePost();
+            //     }
+            //   }
+            // } 
               /></>
         )}
     </View>

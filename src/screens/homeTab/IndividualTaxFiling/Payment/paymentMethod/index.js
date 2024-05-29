@@ -23,6 +23,11 @@ const PaymentMethod = () => {
     const [numImagesSelected, setNumImagesSelected] = useState(0)
     const [images, setImages] = useState([])
 
+    const postProof=()=>{
+        setTimeout(()=>{
+            navigation.navigate("homeTab")
+        },1000)
+    }
     //cgetting camnera permission from user
     const requestExternalWritePermission = async () => {
         if (Platform.OS === 'android') {
@@ -229,7 +234,7 @@ const PaymentMethod = () => {
             </ScrollView>
             <Button6
                 onPressBack={() => navigation.navigate('Payment')}
-                //  onPressForward={()=>navigation.navigate('BottomHome')}
+                 onPressForward={postProof}
             />
         </View>
     )

@@ -2,9 +2,8 @@ import { View, Text,TouchableOpacity,ScrollView } from 'react-native'
 import React from 'react'
 import Style from './Style';
 import { TextInput } from 'react-native-paper';
-import { responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 import { useNavigation } from '@react-navigation/native';
-import Button from 'react-native-paper';
+import {Button} from 'react-native-paper';
 
 const Partnership = () => {
   const navigation = useNavigation();

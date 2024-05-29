@@ -22,14 +22,10 @@ const SplashScreen = ({ navigation }) => {
     };
 
     useEffect(() => {
-        console.log(' just get one state here')
-        //if true....dashboard
-        //else .... login
         getUserId()
 
         const timer = setTimeout(() => {
             AsyncStorage.getItem('Email')
-            // navigation.replace("BottomHome")
             AsyncStorage.getItem('PASS')
                 .then(value => {
                     if (value != null) {

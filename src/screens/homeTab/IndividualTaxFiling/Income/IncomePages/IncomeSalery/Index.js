@@ -166,7 +166,7 @@ const IncomeSalery = (props) => {
         const res = await addpost({ postParams, taxFilingId, id })
         console.log('IncomeData', res.data)
         if (res.data) {
-          navigation.navigate('payment')
+          navigation.navigate('TaxSavings')
         }
 
       } catch (error) {

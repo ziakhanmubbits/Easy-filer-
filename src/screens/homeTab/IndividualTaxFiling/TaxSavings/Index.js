@@ -107,7 +107,7 @@ const TaxSavings = (props) => {
           onPress={() => navigation.navigate('TaxSavingsYes')}
         >
           <View>
-            <Ionicons name='ios-checkmark-circle' size={35} color={'green'} />
+            <Ionicons name='checkmark' size={35} color={'green'} />
           </View>
           <View style={Style.touchable1text}>
             <Text style={Style.touchable1text1}>Yes</Text>

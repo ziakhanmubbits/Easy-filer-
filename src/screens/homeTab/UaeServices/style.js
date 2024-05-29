@@ -79,23 +79,32 @@ const Style = StyleSheet.create({
     marginTop: responsiveScreenHeight(1)
   },
   placeholder1: {
-    width: responsiveScreenWidth(80),
+    width: responsiveScreenWidth(85),
     backgroundColor: "white",
     fontSize: responsiveScreenFontSize(2),
     fontFamily: FontFamily.OpenSansLight,
-    color: "black"
+    color: "black",
+    borderColor:'gray',
+    borderWidth:1,
+    borderRadius:6,
+    paddingLeft:10
   },
   placeholder2: {
     borderColor: "black",
     borderWidth: 1
   },
   placeholder3: {
-    width: responsiveScreenWidth(30),
+    width: responsiveScreenWidth(37),
     height:responsiveScreenHeight(4.5),
     backgroundColor: "white",
     fontSize: responsiveScreenFontSize(2),
     fontFamily: FontFamily.OpenSansLight,
-    color: "black"
+    color: "black",
+    borderColor:'gray',
+    borderWidth:1,
+    borderRadius:6,
+    paddingLeft:10,
+    left:-5,
   },
   placeholder4: {
     borderColor: "black",
