@@ -25,7 +25,7 @@ const ItemList = () => {
   const navigation = useNavigation();
   const call = (id) => {
     switch (id) {
-      case 'Salery':
+      case 'Salary':
         navigation.navigate('Salary')
         break;
       case 'Rental Income':
@@ -37,7 +37,7 @@ const ItemList = () => {
       case 'Agriculture':
         navigation.navigate('Agriculture')
         break;
-      case 'Foriegn':
+      case 'Foreign':
         navigation.navigate('Foriegn')
         break;
       case 'Other Sources':

@@ -55,7 +55,7 @@ const AddBusinessToNTN = () => {
   function nav(name) {
     {
       switch (name) {
-        case "Business Add to NTN":
+        case "Add Business to NTN":
           navigation.navigate('AddedForm2');
           break;
         default:

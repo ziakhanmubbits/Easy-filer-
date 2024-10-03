@@ -62,13 +62,13 @@ const ListItem = [
   {
     id: '4',
     image: (require('../../../src/assets/pictures/business.png')),
-    title: 'Business Add',
+    title: 'Add Business',
     title2: 'to NTN'
   },
   {
     id: '5',
     image: (require('../../../src/assets/pictures/remove.png')),
-    title: 'Remove',
+    title: 'Remove Business',
     title2: 'from NTN'
   },
   {

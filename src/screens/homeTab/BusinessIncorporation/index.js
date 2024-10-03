@@ -60,11 +60,11 @@ const BusinessIncorporation = () => {
   function nav(name) {
     {
       switch (name) {
-        case "Individual/Sole Propriter Registration":
+        case "Individual/Sole Proprietor Registration":
           navigation.navigate('NtnregSoleProprietor');
           break;
           
-        case "Postership/AOP Registration":
+        case "Partnership/AOP Registration":
           navigation.navigate('NtnRegAopPartnership');
           break;
         default:

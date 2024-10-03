@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, FlatList, StyleSheet, ScrollView } from 'react-native'
+import { View, Text, Image, TouchableOpacity, Linking,FlatList, StyleSheet, ScrollView } from 'react-native'
 import React, { useEffect } from 'react'
 import { responsiveScreenFontSize, responsiveScreenHeight, responsiveScreenWidth } from 'react-native-responsive-dimensions'
 import axios from 'axios'
@@ -13,6 +13,14 @@ const ServiceCharges = () => {
   const navigation = useNavigation()
   const [array, setArray] = useState([])
   const [loading,setLoading]=useState(true)
+
+  const handleWhatsAppPress = () => {
+    Linking.openURL('whatsapp://send?phone=+923308880381');
+  };
+
+  const handleSmsPress = () => {
+    Linking.openURL('sms:+923308880381');
+  };
 
   useEffect(() => {
     fetchData()
@@ -110,13 +118,15 @@ const ServiceCharges = () => {
             </View>
             <View style={{ alignSelf: "flex-end",flexDirection:"row" }}>
               <Text style={{ color: 'darkred', fontSize: responsiveScreenFontSize(1.8), fontFamily: FontFamily.MONTSERRAT_Regular }}>Request for call</Text>
-              <TouchableOpacity style={{marginLeft:responsiveScreenWidth(2)}}>
+             {/* this button is for whatsapp mean here plz when i click on this button then should be redirect to whatsappp  */}
+              <TouchableOpacity onPress={handleWhatsAppPress} style={{marginLeft:responsiveScreenWidth(2)}}>
                 <Image
                   source={require('../../../../src/assets/pictures/whatsapp.png')}
                   style={{ width: 20, height: 20, resizeMode: 'contain', marginRight: 8 }}
                 />
               </TouchableOpacity>
-              <TouchableOpacity>
+              {/* here this button for direct masgs on sim  and here redirect to mobile masgs */}
+              <TouchableOpacity onPress={handleSmsPress}>
               <Image
                   source={require('../../../../src/assets/pictures/comments.png')}
                   style={{ width: 20, height: 20, resizeMode: 'contain', marginRight: 8 }}
